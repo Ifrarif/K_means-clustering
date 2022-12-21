@@ -1,7 +1,6 @@
-# K-Means Clustering code
-
 # Importing the python libraries 
-
+import os
+import psutil
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -51,3 +50,8 @@ plt.xlabel('Annual Income (k$)')
 plt.ylabel('Spending score (1-100)')
 plt.legend()
 plt.show()
+
+
+print(psutil.cpu_percent())
+print(psutil.cpu_stats())
+print(psutil.cpu_freq())
